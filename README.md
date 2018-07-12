@@ -33,3 +33,21 @@ We suggest that you begin by typing:
 
 Happy hacking!
 ```
+
+3. 发布到gh-page分支在线访问
+
+```
+# 安装
+npm install gh-pages --save-dev
+# package.json 增加如下
+"scripts": {
+  "deploy": "gh-pages -d build"
+}
+# 发布
+npm run deploy
+
+# 查看
+http://myname.github.io/myapp
+```
+
+参考：(https://github.com/tschaub/gh-pages)[https://github.com/tschaub/gh-pages]
